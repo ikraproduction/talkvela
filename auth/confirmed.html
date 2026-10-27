@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The link carries a one-time code: never send it on to another site. -->
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; connect-src https://*.supabase.co; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>E-Mail bestätigt – Talkvela</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="brand">Talkvela</span>
+    <label class="lang"><span data-t="lang_label">Sprache</span>
+      <select id="lang"></select>
+    </label>
+  </div>
+</header>
+<main class="wrap">
+  <div class="card" aria-live="polite">
+    <noscript>
+      <p>Bitte JavaScript einschalten. · Please turn on JavaScript.</p>
+    </noscript>
+    <section data-part="checking" hidden>
+      <h1 data-t="checking"></h1>
+    </section>
+    <section data-part="ok" hidden>
+      <p class="icon" aria-hidden="true">✓</p>
+      <h1 data-t="confirm_ok_title"></h1>
+      <p class="note ok" data-t="confirm_ok_body"></p>
+    </section>
+    <section data-part="bad" hidden>
+      <h1 data-t="link_bad_title"></h1>
+      <p class="note bad" data-t="link_bad_body"></p>
+    </section>
+    <section data-part="error" hidden>
+      <h1 data-t="link_bad_title"></h1>
+      <p class="note bad" data-t="error"></p>
+    </section>
+    <section data-part="missing" hidden>
+      <h1>Talkvela</h1>
+      <p data-t="link_missing"></p>
+    </section>
+    <section data-part="not-ready" hidden>
+      <h1>Talkvela</h1>
+      <p data-t="not_ready"></p>
+    </section>
+  </div>
+</main>
+<footer>Talkvela · <a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js" crossorigin="anonymous"></script>
+<script src="config.js"></script>
+<script src="i18n.js"></script>
+<script src="common.js"></script>
+<script src="confirmed.js"></script>
+</body>
+</html>
