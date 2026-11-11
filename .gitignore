@@ -1,0 +1,10 @@
+# Never publish secrets or local tool settings.
+.claude/
+*.jks
+*.keystore
+key.properties
+*-key-info.txt
+.env
+.env.*
+*.pem
+*.p12
